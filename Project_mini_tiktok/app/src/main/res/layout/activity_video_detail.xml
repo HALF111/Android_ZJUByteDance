@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <VideoView
+        android:id="@+id/vv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/video_detail_like"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/like" />
+
+    <ImageView
+        android:id="@+id/video_detail_portrait"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/video_detail_like"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/tang" />
+
+    <ImageView
+        android:id="@+id/video_detail_comment"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/video_detail_portrait"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/comment" />
+
+    <ImageView
+        android:id="@+id/video_detail_share"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/share" />
+
+    <TextView
+        android:id="@+id/video_detail_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginRight="256dp"
+        android:gravity="left"
+        android:text="\@马化腾"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/video_detail_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginRight="280dp"
+        android:gravity="left"
+        android:text="vlog1"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/material_wave_loading" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

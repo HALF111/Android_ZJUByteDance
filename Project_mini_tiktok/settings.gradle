@@ -1,0 +1,2 @@
+rootProject.name = "Project_mini_tiktok"
+include ':app'
